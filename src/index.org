@@ -1,0 +1,16 @@
+#+TITLE: VLABS Monitoring Services
+#+AUTHOR: VLEAD Systems
+#+DATE: [2017-08-02 Wed]
+#+SETUPFILE: ./org-templates/level-0.org
+#+TAGS: boilerplate(b)
+#+EXCLUDE_TAGS: boilerplate
+#+OPTIONS: ^:nil
+
+* Introduction
+This document describes about the checking VLEAD email alerts.
+
+* What to monitoring?
+ - 
+ - Checking VLEAD email alerts of outreach portal VM, database backup
+ - and other monitoring services, which includes cluster servers. Also checking analytics of virtual-labs, monitoring
+amazon instances, billing and thier graphs.
