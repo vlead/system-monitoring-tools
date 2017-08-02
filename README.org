@@ -3,43 +3,40 @@
 #+DATE: [02-Aug-2017-Wed]
 
 * Github repository structure
- - There are four different organizations for Virtual-labs Github reposiotires namely
-  + vlead - It consists of all the reposiotories for the projetcs currently running in VLEAD
-  + openedx-vlead - It It consists of all the reposiotories for the projetcs currently running in VLEAD related to OpnenedX
-  + virtual-labs - It consists of all the reposiotories for the projetcs currently running in all the partner institutes of Virtual-Labs
+ - There are four different organizations for Virtual-labs Github repositories namely
+  + *vlead* - It consists of all the repositories for the projects
+    currently running in VLEAD.
+  + *openedx-vlead* - It It consists of all the reposiotories for the
+    projetcs currently running in VLEAD related to OpnenedX.
+  + *virtual-labs* - It consists of all the repositories for the
+    projects currently running in all the partner institutes of
+    Virtual-Labs.
+  + *vlabs-workshops* - It consists of all the reposiotories for the
+    workshops conducted by VLEAD
 
-  d. vlabs-workshops - It consists of all the reposiotories for the workshops conducted by VLEAD
-
-2. Each organizations have several repositories which adhere to a perticular directory structure as described below.
+ - Each organizations have several repositories which adhere to a perticular directory structure as described below.
   #+BEGIN_EXAMPLE
   |-src
   |-init.sh
   |-makefile
   |-README.md
 #+END_EXAMPLE
-
- a. src - This dirctory has all the modifiable source files to be version controlled
-
- b. init.sh - This file has initialization scripts.
-
- c. makefile - Thi file is use for creating the build of the source files
-
- d. README.md - This file contains the brief description about the repository
+  + src - This dirctory has all the modifiable source files to be version controlled
+  + init.sh - This file has initialization scripts.
+  + makefile - Thi file is use for creating the build of the source files
+  + README.md - This file contains the brief description about the repository
  
 * Process of permissions for VLEAD Github repositoies
- The following process needs to be followed for requesting access to Github repositories : 
- a. Firstly create an issue in the [[https://github.com/vlead/vlabs-milestones/issues][milestones]] repository in Github.
- 
- b. Describe the reason for the access of a repository
-
- c. The VLEAD systems administrator would respond to the raised request by giving the access in the same issue
-
- d. Once the request has been responded, issue needs to be close by the concerned requester for the access
+ - The following process needs to be followed for requesting access to Github repositories : 
+  + Firstly create an issue in the [[https://github.com/vlead/vlabs-milestones/issues][milestones]] repository in Github.
+  + Describe the reason for the access of a repository
+  + The VLEAD systems administrator would respond to the raised request by giving the access in the same issue
+  + Once the request has been responded, issue needs to be close by the concerned requester for the access
 
 * Process of monitoring VLEAD services
-Following Virtual-Labs services are monitored as part of the monitoring process
- a. Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]].
- b. Checking VLEAD email alerts of outreach portal VM, database backup and other monitoring services, which includes cluster servers.
- c. Checking analytics of virtual-labs, monitoring amazon instances, billing and thier graphs.
+ - Following Virtual-Labs services are monitored as part of the monitoring process
+  + Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]].
+  + Checking VLEAD email alerts of outreach portal VM, database backup and other monitoring services, which includes cluster servers.
+  + Checking analytics of virtual-labs, monitoring amazon instances, billing and thier graphs.
 
 
