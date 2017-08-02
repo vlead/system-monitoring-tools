@@ -7,10 +7,12 @@
 #+OPTIONS: ^:nil
 
 * Introduction
-This document describes about the checking VLEAD email alerts.
+This document describes about the monitoring VLEAD services includes cluster servers.
 
 * What to monitoring?
- - 
- - Checking VLEAD email alerts of outreach portal VM, database backup
- - and other monitoring services, which includes cluster servers. Also checking analytics of virtual-labs, monitoring
-amazon instances, billing and thier graphs.
+ - Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]].
+ - Checking VLEAD email alerts of outreach portal VM, database backup and other monitoring services, which includes cluster servers.
+ - Checking analytics of virtual-labs, monitoring amazon instances, billing and thier graphs.
+
+* How to monitoring?
+
