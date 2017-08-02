@@ -3,12 +3,10 @@
 #+DATE: [02-Aug-2017-Wed]
 
 * Github repository structure
-1. There are four different organizations for Virtual-labs Github reposiotires namely
-  a. vlead - It consists of all the reposiotories for the projetcs currently running in VLEAD
-
-  b. openedx-vlead - It It consists of all the reposiotories for the projetcs currently running in VLEAD related to OpnenedX
-
-  c. virtual-labs - It consists of all the reposiotories for the projetcs currently running in all the partner institutes of Virtual-Labs
+ - There are four different organizations for Virtual-labs Github reposiotires namely
+  + vlead - It consists of all the reposiotories for the projetcs currently running in VLEAD
+  + openedx-vlead - It It consists of all the reposiotories for the projetcs currently running in VLEAD related to OpnenedX
+  + virtual-labs - It consists of all the reposiotories for the projetcs currently running in all the partner institutes of Virtual-Labs
 
   d. vlabs-workshops - It consists of all the reposiotories for the workshops conducted by VLEAD
 
