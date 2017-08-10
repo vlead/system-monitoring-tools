@@ -9,9 +9,9 @@
 * Introduction
 This document describes about the monitoring VLEAD services includes cluster servers.
 
-* What to monitoring?
- - Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]]. (for example
-   memory status and other services like SSH, HTTP, ping, current
+* What to monitor?
+ - Checking cluster servers of service status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]]. (for example
+   memory and diskspace status and other services like SSH, HTTP, ping, current
    users..etc)
  - Checking VLEAD [[alerts@vlabs.ac.in][email alerts]] of outreach portal VM, database
    backups, elastic search service, mysql status and other monitoring
@@ -20,8 +20,8 @@ This document describes about the monitoring VLEAD services includes cluster ser
  - Checking analytics of virtual-labs on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]]
  - Monitoring amazon instances, billing and thier graphs.
 
-* How to monitoring?
- - Monitoring cluster server details like total Hosts/Services,
+* How to monitor?
+ - Monitoring cluster servers of service details like total Hosts/Services,
    Hosts/Services Actively Checked, Uptime, Stuatus information of Hosts/Services using
    [[http://nagios.vlabs.ac.in/nagios/][nagios]] tool.
  - Checking VLEAD email alerts using [[alerts@vlabs.ac.in]] and watching
