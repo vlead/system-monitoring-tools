@@ -10,9 +10,24 @@
 This document describes about the monitoring VLEAD services includes cluster servers.
 
 * What to monitoring?
- - Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]].
- - Checking VLEAD email alerts of outreach portal VM, database backup and other monitoring services, which includes cluster servers.
- - Checking analytics of virtual-labs, monitoring amazon instances, billing and thier graphs.
+ - Checking cluster server status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]]. (for example
+   memory status and other services like SSH, HTTP, ping, current
+   users..etc)
+ - Checking VLEAD [[alerts@vlabs.ac.in][email alerts]] of outreach portal VM, database
+   backups, elastic search service, mysql status and other monitoring
+   services, which includes cluster servers such as pulic, private
+   dns..etc.
+ - Checking analytics of virtual-labs on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]]
+ - Monitoring amazon instances, billing and thier graphs.
 
 * How to monitoring?
+ - Monitoring cluster server details like total Hosts/Services,
+   Hosts/Services Actively Checked, Uptime, Stuatus information of Hosts/Services using
+   [[http://nagios.vlabs.ac.in/nagios/][nagios]] tool.
+ - Checking VLEAD email alerts using [[alerts@vlabs.ac.in]] and watching
+   memory status of outreach portal VM, database backups, and other
+   services, which includes cluster services.
+ - Watching monthly wise and daily wise usage of virtual-labs analytics on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]].
+ - Monitoring amazon currently running instances in virgnia region,
+   billing and their graphs on [[https://vlead.signin.aws.amazon.com/console][Amazon Webservices]].
 
