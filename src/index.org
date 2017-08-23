@@ -7,27 +7,61 @@
 #+OPTIONS: ^:nil
 
 * Introduction
-This document describes about the monitoring VLEAD services includes cluster servers.
+  This document describes about the monitoring VLEAD services includes cluster servers.
 
 * What to monitor?
- - Checking cluster servers of service status details on [[http://nagios.vlabs.ac.in/nagios/][nagios]]. (for example
-   memory and diskspace status and other services like SSH, HTTP, ping, current
-   users..etc)
- - Checking VLEAD [[alerts@vlabs.ac.in][email alerts]] of outreach portal VM, database
-   backups, elastic search service, mysql status and other monitoring
-   services, which includes cluster servers such as pulic, private
-   dns..etc.
- - Checking analytics of virtual-labs on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]]
- - Monitoring amazon instances, billing and thier graphs.
+ 1. Check the status of services of cluster servers on [[http://nagios.vlabs.ac.in/nagios/][nagios]]. (for
+    example memory and diskspace status and other services like SSH,
+    HTTP, ping, current users..etc)
+ 2. Check VLEAD *alerts@vlabs.ac.in* of outreach portal VM, database
+    backups, elastic search service, mysql status and other monitoring
+    services, which includes cluster servers such as pulic, private
+    dns..etc.
+ 3. Check the analytics of virtual-labs on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]]
+ 4. Monitor amazon instances, billing and their graphs.
+ 5. Version Control VLEAD's infrastructure configuration files at
+    least once in a month
+ 6. Check the backups every day or at least once in a week.
+    1. Important containers on BASE machines
+    2. Backup of AWS Backup server which is on aws. AWS Backup server
+       is a rnsapshot server, it backs up all important EC2 Instances
+       that are in production. 
+ 7. http://analytics-api.vlabs.ac.in/api/elkusage and
+    http://analytics-api.vlabs.ac.in/api/totalusage
 
 * How to monitor?
+** Nagios
  - Monitoring cluster servers of service details like total Hosts/Services,
    Hosts/Services Actively Checked, Uptime, Stuatus information of Hosts/Services using
    [[http://nagios.vlabs.ac.in/nagios/][nagios]] tool.
+** alerts@vlabs.ac.in
  - Checking VLEAD email alerts using [[alerts@vlabs.ac.in]] and watching
    memory status of outreach portal VM, database backups, and other
    services, which includes cluster services.
+** analytics.vlabs.ac.in
  - Watching monthly wise and daily wise usage of virtual-labs analytics on [[http://analytics.vlabs.ac.in/][analytics.vlabs.ac.in]].
+** AWS Billing status
  - Monitoring amazon currently running instances in virgnia region,
    billing and their graphs on [[https://vlead.signin.aws.amazon.com/console][Amazon Webservices]].
+** Backups
+   All backups ( AWS production backups and VLEAD's Local production
+   backups) will be available at =/mnst/san1/backup-snapshots/=
+*** AWS Production backups
+   - =ssh-tunnel.vlabs.ac.in/home/shankar/backup/= in
+     =/mnt/san1/backup-snapshots/= on base3 machine.
+*** VLEAD's Local Production backups
+   - =/mnst/san1/backup-snapshots/= on base3 machine
+** http://analytics-api.vlabs.ac.in/api/elkusage and  http://analytics-api.vlabs.ac.in/api/totalusage
+   - Open this link http://analytics-api.vlabs.ac.in/api/elkusage in a
+     web browser and see the response similar to below line
+     #+BEGIN_EXAMPLE
+     {"count": 17464, "_shards": {"successful": 5, "failed": 0, "total": 5}}     
+     #+END_EXAMPLE
+
+
+   - Open this link http://analytics-api.vlabs.ac.in/api/totalusage in a
+     web browser and see the response similar to below line
+     #+BEGIN_EXAMPLE
+     {"total_usage": 635556, "description": "Total analytics = Usage(stats.vlabs.ac.in/analytics/) + Usage(Elasticsearch Server)"}
+     #+END_EXAMPLE
 
