@@ -49,6 +49,9 @@
 *** AWS Production backups
    - =ssh-tunnel.vlabs.ac.in/home/shankar/backup/= in
      =/mnt/san1/backup-snapshots/= on base3 machine.
+   - On AWS, We have rsnapshot server, it backs up all important EC2 Instances
+       that are in production.
+     These backups available at =/.snapshots/=
 *** VLEAD's Local Production backups
    - =/mnst/san1/backup-snapshots/= on base3 machine
 ** http://analytics-api.vlabs.ac.in/api/elkusage and  http://analytics-api.vlabs.ac.in/api/totalusage
